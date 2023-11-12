@@ -4,19 +4,19 @@
     const app = express();
     const port = process.env.PORT || 5000;
 
-//MIDDLEWARE
+    //MIDDLEWARE
     app.use(cors());
     app.use(express.json());
 
 
-//Final-Project-Server_Site1
-//UJpP4P2DFP9fTrVG
+    //Final-Project-Server_Site1
+    //UJpP4P2DFP9fTrVG
 
 
  
     const uri = "mongodb+srv://Final-Project-Server_Site1:UJpP4P2DFP9fTrVG@cluster0.zvc5ptn.mongodb.net/?retryWrites=true&w=majority";
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+    // Create a MongoClient with a MongoClientOptions object to set the Stable API version
     const client = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -46,4 +46,4 @@
 
     app.listen(port, () => {
     console.log(`server is running on port: ${port}`)
-    });
+    });     
